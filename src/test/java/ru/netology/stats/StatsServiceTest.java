@@ -20,7 +20,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
         int[] managerSales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 15;
-        int actual = service.CalculateWithADifficultAmountOfSales(managerSales);
+        int actual = service.calculateWithADifficultAmountOfSales(managerSales);
         assertEquals(expected, actual);
 
     }

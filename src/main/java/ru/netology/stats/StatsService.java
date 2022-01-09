@@ -9,8 +9,8 @@ public class StatsService {
         return sum;
     }
 
-    public int CalculateWithADifficultAmountOfSales(int[] managerSales) {
-                return calculateSalesAmount(managerSales)/ managerSales.length;
+    public int calculateWithADifficultAmountOfSales(int[] managerSales) {
+        return calculateSalesAmount(managerSales) / managerSales.length;
     }
 
     public int minSales(long[] sales) {
@@ -43,16 +43,17 @@ public class StatsService {
         int month = 0;
         for (int sale : sales) {
             int i = 12;
-            if (sale < CalculateWithADifficultAmountOfSales(sales)) {
+            if (sale < calculateWithADifficultAmountOfSales(sales)) {
                 month = month + 1;
             }
         }
         return month;
     }
+
     public int aboveAverageSales(int[] sales) {
-                int month = 0;
+        int month = 0;
         for (int sale : sales) {
-            if (sale > CalculateWithADifficultAmountOfSales(sales)) {
+            if (sale > calculateWithADifficultAmountOfSales(sales)) {
                 month = month + 1;
             }
         }
